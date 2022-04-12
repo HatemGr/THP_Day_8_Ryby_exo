@@ -3,7 +3,7 @@ def say_hello (first_name)
 end
 
 def ask_first_name()
-  puts "Quel est ton nom ?"
+  puts "Quel est ton nom ??"
   return gets.chomp
 end
 
