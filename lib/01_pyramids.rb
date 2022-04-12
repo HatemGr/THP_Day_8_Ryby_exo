@@ -39,7 +39,16 @@ def wtf_pyramid ()
   end
 end
 
- half_pyramid()
-# full_pyramid()
-# wtf_pyramid()
-# Check : SWITCH sous Ruby
+puts "Quelle pyramide voulez vous ? choisir parmis les choix suivant:"
+puts "half|full|wtf|quit"
+print ">"
+input = gets.chomp.downcase
+
+
+case input
+when "half" then half_pyramid()
+when "full" then full_pyramid()
+when "wtf" then wtf_pyramid()
+when "quit" then puts "Au revoir !"
+else puts "Requete non reconnue, au revoir."
+end
