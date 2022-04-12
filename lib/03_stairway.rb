@@ -51,4 +51,11 @@ def average_finish_time_n(n)
   return total_turn / n
 end
 
-puts average_finish_time_n(5000)
+puts "Sur 100 parties, le jeu c'est terminé en moyenne en #{average_finish_time()} tours."
+puts "Souhaitez vous faire un testes sur un nombre defini de parties ? (10, 500, 3000...) y/n"
+response = gets.chomp.downcase until response == "y" or response == "n"
+if response == "y"
+  puts "Combien de parties voulez vous simuler ? Il faut un nombre:"
+  nbr = gets.chomp.to_i until nbr.is_a? Integer and nbr > 0
+  puts "#{nbr} parties se sont finient en #{average_finish_time_n(nbr)} tours."
+end
