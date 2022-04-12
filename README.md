@@ -8,4 +8,4 @@
 └── README.md
 
 ### 00_hello : exectuter le programmer et suivre les instructions
-### 01_pyramid : 3 programmes dispo : half, full et
+### 01_pyramid : executer le programme, un input vous sera demandé pour lancer le programme half, full ou wtf pyramid.
